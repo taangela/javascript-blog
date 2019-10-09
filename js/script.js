@@ -29,15 +29,15 @@ const titleClickHandler = function(event) {
     }
 
     /* [DONE] get 'href' attribute from the clicked link */
-    const hrefLink = this.getAttribute('href');
-    console.log(hrefLink);
+    const articleSelector = this.getAttribute('href');
+    console.log(articleSelector);
 
     /* [DONE] find the correct article using the selector (value of 'href' attribute) */
-    const hrefArtticle = document.querySelector(hrefLink);
-    console.log(hrefArtticle);
+    const targetArticle = document.querySelector(articleSelector);
+    console.log(targetArticle);
 
-    /* add class 'active' to the correct article */
-    hrefArtticle.classList.add('active');
+    /* [DONE] add class 'active' to the correct article */
+    targetArticle.classList.add('active');
 }
 
 const links = document.querySelectorAll('.titles a');
