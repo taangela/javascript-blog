@@ -60,6 +60,7 @@
         /* [DONE] for each article */
         const articles = document.querySelectorAll(optArticleSelector);
         console.log(articles);
+        let html= '';
         for (let article of articles) {
 
             /* [DONE] get the article id */
@@ -77,11 +78,11 @@
             let linkHTML = ('<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>');
             console.log(linkHTML);
 
-            /* [DONE] insert link into titleList */
-            titleList.innerHTML = titleList.innerHTML + linkHTML;
+            /* [DONE] insert link into html variable */
+            html = html + linkHTML;
 
         }
-        console.log(titleList);
+        titleList.innerHTML= html;
     }
 
     generateTitleLinks();
