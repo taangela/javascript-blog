@@ -162,11 +162,45 @@ li a{
 .sidebar .tags span{
   color: #46708a;
 }
+.topnav .icon {
+  display: none;
+  color: #ad78a1;
 
+}
 /*mobile*/
 @media (max-width: 767px) {
 
+    #art-title {
+      display: inline-block;
+    }
+    .topnav {
+      position: relative;
+    }
     .wrapper {
       display: block;
     }
+    .topnav ul {
+      display: none;
+    }
+    .topnav  .icon {
+      position: absolute;
+      display: inline-block;
+      right: 0px;
+      top: 22px;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive ul {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .sidebar, .posts {
+    padding: 0 20px;
+  }
+  .sidebar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
+
