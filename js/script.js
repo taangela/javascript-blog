@@ -72,3 +72,23 @@
 
     generateTitleLinks();
 }
+
+
+
+/*function myFunction() {
+  let x = document.getElementById("list-container-id");  
+  let y = document.getElementById("titles-id");
+
+  console.log("dodaje " + x.className);
+  if (x.className.indexOf("responsive") < 0) {
+    x.className += " responsive";
+    console.log("dodalem")
+    y.style = "display: block;";
+  } else {
+    x.className = x.className.replace("responsive", "");
+    console.log('co jest k mac kaczorze');
+    y.style = "";
+  }
+
+  
+}*/

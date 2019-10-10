@@ -9,7 +9,7 @@ body {
   background: #fff;
   font-family: "Source Sans Pro", sans-serif;
   color: #444;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -17,12 +17,25 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #E7E7F1;
+}
+
+li a {
+  text-decoration: none;
+  color: #46708a;
+}
+
+li a:hover {
+  color: #343739;
 }
 
 .section-title {
   font-size: 22px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  color: #ad78a1;
   font-weight: 600;
 }
 
@@ -36,7 +49,7 @@ body {
 .wrapper {
   display: -ms-flexbox;
   display: flex;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .sidebar {
@@ -51,19 +64,43 @@ body {
 
 .sidebar, .posts {
   background: #fff;
-  margin-right: 10px;
   padding: 40px;
-  border: 1px solid #444;
+  border: 2px solid white;
   border-radius: 5px;
+  margin: 10px;
+  background-color: #EEEDF5;
 }
 
 /* Logo */
+.logo-section {
+  background-image: url("https://images.pexels.com/photos/1306705/pexels-photo-1306705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 70vh;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin: 20px 20px 0 20px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.logo-box {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .logo {
   font-family: "Sacramento", cursive;
   font-weight: 400;
-  font-size: 104px;
+  font-size: 150px;
   line-height: 1;
   text-align: center;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: #fff;
 }
 
 /* Lists */
@@ -106,5 +143,20 @@ body {
 
 .post-tags p {
   margin: 0 10px 0 0;
+}
+
+.post-title {
+  color: #ad78a1;
+}
+
+.sidebar .tags span {
+  color: #46708a;
+}
+
+/*mobile*/
+@media (max-width: 767px) {
+  .wrapper {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
