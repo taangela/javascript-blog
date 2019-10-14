@@ -66,6 +66,7 @@ li a{
 
 .posts {
   flex: 2 0 0;
+  position: relative;
 }
 
 .sidebar, .posts {
@@ -137,10 +138,21 @@ li a{
 
 /* Post */
 
-.post {
+/*.post {
   display: none;
   &.active {
     display: block;
+  }
+}*/
+.post {
+  position: absolute;
+  opacity:0;
+  transition: all 1s ease;
+  top: 40px;
+  margin-right: 40px;
+  &.active {
+    opacity: 1;
+    z-index: 10;
   }
 }
 

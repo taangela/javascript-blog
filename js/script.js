@@ -5,7 +5,7 @@
         event.preventDefault();
         const clickedElement = this;
         console.log('Link was clicked!');
-        console.log(event);
+        /*console.log(event);*/
 
         /* [DONE] remove class 'active' from all article links  */
         const activeLinks = document.querySelectorAll('.titles a.active');
@@ -14,7 +14,7 @@
         }
 
         /* [DONE] add class 'active' to the clicked link */
-        console.log('clickedElement:', clickedElement)
+        /*console.log('clickedElement:', clickedElement)*/
         clickedElement.classList.add('active');
 
         /*[DONE] remove class 'active' from all articles */
@@ -25,11 +25,11 @@
 
         /* [DONE] get 'href' attribute from the clicked link */
         const articleSelector = this.getAttribute('href');
-        console.log(articleSelector);
+        /*console.log(articleSelector);*/
 
         /* [DONE] find the correct article using the selector (value of 'href' attribute) */
         const targetArticle = document.querySelector(articleSelector);
-        console.log(targetArticle);
+        /*console.log(targetArticle);*/
 
         /* [DONE] add class 'active' to the correct article */
         targetArticle.classList.add('active');
@@ -47,21 +47,21 @@
 
         /* [DONE] for each article */
         const articles = document.querySelectorAll(optArticleSelector);
-        console.log(articles);
+        /*console.log(articles);*/
         let html = '';
         for (let article of articles) {
             /* [DONE] get the article id */
             let articleId = article.getAttribute('id');
-            console.log(articleId);
+            /*console.log(articleId);*/
             /* [DONE] find the title element and get the title from the title element*/
             let articleTitle = article.querySelector(optTitleSelector).innerHTML;
-            console.log(articleTitle);
+            /*console.log(articleTitle);*/
             /* [DONE] create HTML of the link */
             let linkHTML = ('<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>');
             console.log(linkHTML);
             /* [DONE] insert link into html variable */
             html = html + linkHTML;
-            console.log(html);
+            /*console.log(html);*/
         }
         titleList.innerHTML = html;
         const links = document.querySelectorAll('.titles a');
@@ -71,31 +71,34 @@
     }
 
     generateTitleLinks();
+
 }
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+function getDivHeight() {
+	let maxHeightDiv = 0;
+
+	for (let i = 1; i <= 10; i++) {
+		let heightDiv = document.getElementById('article-' + i).clientHeight;
+
+		if (maxHeightDiv < heightDiv) {
+			maxHeightDiv = heightDiv;
+		}
+	}
+	console.log(maxHeightDiv);
+
+	document.getElementById('maxHeightDiv').style.height = maxHeightDiv + 20 + 'px';
 }
 
-/*function myFunction() {
-  let x = document.getElementById("list-container-id");  
-  let y = document.getElementById("titles-id");
+getDivHeight();
 
-  console.log("dodaje " + x.className);
-  if (x.className.indexOf("responsive") < 0) {
-    x.className += " responsive";
-    console.log("dodalem")
-    y.style = "display: block;";
+
+
+
+function mobileMenu() {
+  const mobile = document.getElementById("myTopnav");
+  if (mobile.className === "topnav") {
+    mobile.className += " responsive";
   } else {
-    x.className = x.className.replace("responsive", "");
-    console.log('co jest k mac kaczorze');
-    y.style = "";
+    mobile.className = "topnav";
   }
-
-  
-}*/
+}
