@@ -1,6 +1,4 @@
-'use strict';
-
-{
+'use strict'; {
     const titleClickHandler = function(event) {
         event.preventDefault();
         const clickedElement = this;
@@ -75,18 +73,18 @@
 }
 
 function getDivHeight() {
-	let maxHeightDiv = 0;
+    let maxHeightDiv = 0;
 
-	for (let i = 1; i <= 10; i++) {
-		let heightDiv = document.getElementById('article-' + i).clientHeight;
+    for (let i = 1; i <= 10; i++) {
+        let heightDiv = document.getElementById('article-' + i).clientHeight;
 
-		if (maxHeightDiv < heightDiv) {
-			maxHeightDiv = heightDiv;
-		}
-	}
-	console.log(maxHeightDiv);
+        if (maxHeightDiv < heightDiv) {
+            maxHeightDiv = heightDiv;
+        }
+    }
+    console.log(maxHeightDiv);
 
-	document.getElementById('maxHeightDiv').style.height = maxHeightDiv + 20 + 'px';
+    document.getElementById('maxHeightDiv').style.height = maxHeightDiv + 20 + 'px';
 }
 
 getDivHeight();
@@ -95,10 +93,10 @@ getDivHeight();
 
 
 function mobileMenu() {
-  const mobile = document.getElementById("myTopnav");
-  if (mobile.className === "topnav") {
-    mobile.className += " responsive";
-  } else {
-    mobile.className = "topnav";
-  }
+    const mobile = document.getElementById('myTopnav');
+    if (mobile.className === 'topnav') {
+        mobile.className += 'responsive';
+    } else {
+        mobile.className = 'topnav';
+    }
 }
