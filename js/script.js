@@ -37,7 +37,9 @@
         optTitleSelector = '.post-title',
         optTitleListSelector = '.titles',
         optArticleTagsSelector = '.post-tags .list',
-        optArticleTagsSelectorLink = '.post-tags .list a';/*czy cos zle zrobilam, ze musialam dodac taka stala*/
+        optArticleTagsSelectorLink = '.post-tags .list a',
+        /*czy cos zle zrobilam, ze musialam dodac taka stala*/
+        optArticleAuthorSelector = '.post-author';
 
     function generateTitleLinks(customSelector = '') {
 
@@ -155,6 +157,23 @@
     }
 
     addClickListenersToTags();
+
+    function generateAuthors() {
+        const articles = document.querySelectorAll(optArticleSelector);
+        for (let article of articles) {
+            const authorsWrapper = article.querySelector(optArticleAuthorSelector);
+            console.log(authorsWrapper);
+            let html = '';
+            const articleAuthors = article.getAttribute('data-author');
+            console.log(articleAuthors);
+            let linkHTML = ('<a href="#' + articleAuthors + '">' + articleAuthors + '</a>');
+            html = html + linkHTML;
+            console.log(html);
+            authorsWrapper.innerHTML = html;
+            }
+    }
+
+    generateAuthors();
 }
 
 function getDivHeight() {
