@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
 /* Variables */
 /* Global */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -22,12 +24,14 @@ body {
   background-color: #E7E7F1;
 }
 
-li a {
+li a,
+.post-author a {
   text-decoration: none;
   color: #46708a;
 }
 
-li a:hover {
+li a:hover,
+.post-author a:hover {
   color: #343739;
 }
 
@@ -63,7 +67,8 @@ li a:hover {
   position: relative;
 }
 
-.sidebar, .posts {
+.sidebar,
+.posts {
   background: #fff;
   padding: 40px;
   border: 2px solid white;
@@ -198,7 +203,8 @@ li a:hover {
     display: block;
     text-align: left;
   }
-  .sidebar, .posts {
+  .sidebar,
+  .posts {
     padding: 0 20px;
   }
   .sidebar {
