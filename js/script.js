@@ -40,8 +40,8 @@
         optArticleTagsSelectorLink = '.post-tags .list a',
         /*czy cos zle zrobilam, ze musialam dodac taka stala*/
         optArticleAuthorSelector = '.post-author',
-        optArticleAuthorSelectorLink = '.post-author a';
-
+        optArticleAuthorSelectorLink = '.post-author a',
+        optTagsListSelector = '.tags.list'
 
 
     function generateTitleLinks(customSelector = '') {
@@ -78,13 +78,14 @@
     generateTitleLinks();
 
     function generateTags() {
+        /* [NEW] create a new variable allTags with an empty array */
+        let allTags = [];
         /* find all articles */
-
         const articles = document.querySelectorAll(optArticleSelector);
         /* START LOOP: for every article: */
         for (let article of articles) {
             /* find tags wrapper */
-            const tagList = article.querySelector(optArticleTagsSelector);
+            const tagsList = article.querySelector(optArticleTagsSelector);
             /* make html variable with empty string */
             let html = '';
             /* get tags from data-tags attribute */
@@ -101,11 +102,21 @@
                 /* add generated code to html variable */
                 html = html + linkHTML;
                 console.log(html);
-                /* END LOOP: for each tag */
+                /* [NEW] check if this link is NOT already in allTags */
+                if (allTags.indexOf(linkHTML) == -1) {
+                    /* [NEW] add generated code to allTags array */
+                    allTags.push(linkHTML);
+                    /* END LOOP: for each tag */
+                }
+                /* insert HTML of all the links into the tags wrapper */
+                tagsList.innerHTML = html;
+                /* END LOOP: for every article: */
             }
-            /* insert HTML of all the links into the tags wrapper */
-            tagList.innerHTML = html;
-            /* END LOOP: for every article: */
+            /* [NEW] find list of tags in right column */
+  			const tagList = document.querySelector('.tags');
+
+  			/* [NEW] add html from allTags to tagList */
+  			tagList.innerHTML = allTags.join(' ');
         }
     }
 
