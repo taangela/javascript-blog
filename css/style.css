@@ -124,6 +124,38 @@ li a:hover,
   display: inline-block;
 }
 
+.sidebar .tags li {
+  display: inline;
+}
+
+.sidebar .tags a {
+  padding: 10px;
+}
+
+.tag-size-1 {
+  font-size: 75%;
+}
+
+.tag-size-2 {
+  font-size: 90%;
+}
+
+.tag-size-3 {
+  font-size: 100%;
+}
+
+.tag-size-4 {
+  font-size: 115%;
+}
+
+.tag-size-5 {
+  font-size: 130%;
+}
+
+.tag-size-6 {
+  font-size: 150%;
+}
+
 /* Authors */
 .authors li {
   margin-bottom: 12px;
