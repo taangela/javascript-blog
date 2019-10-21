@@ -133,27 +133,28 @@ li a:hover,
 }
 
 .tag-size-1 {
-  font-size: 75%;
+  font-size: 80%;
+  opacity: 0.5;
 }
 
 .tag-size-2 {
   font-size: 90%;
+  opacity: 0.6;
 }
 
 .tag-size-3 {
-  font-size: 100%;
+  font-size: 110%;
+  opacity: 0.7;
 }
 
 .tag-size-4 {
-  font-size: 115%;
+  font-size: 130%;
+  opacity: 0.8;
 }
 
 .tag-size-5 {
-  font-size: 130%;
-}
-
-.tag-size-6 {
   font-size: 150%;
+  opacity: 1;
 }
 
 /* Authors */
