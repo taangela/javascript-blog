@@ -7,31 +7,30 @@
     <title></title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-
 </head>
 
 <body>
     <div class="blog">
         <div class="container">
-        	<div class="logo-section">
-        		<div class="logo-box">
-            		<h1 class="logo">my blog</h1>
-            	</div>
+            <div class="logo-section">
+                <div class="logo-box">
+                    <h1 class="logo">my blog</h1>
+                </div>
             </div>
             <main class="wrapper">
                 <aside class="sidebar">
                     <div class="topnav" id="myTopnav">
-                    	<h2 class="section-title" id="art-title">All posts</h2>
-                    	<a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
-    						<i class="fa fa-bars"></i>
-  						</a>	
-                    	<ul class="list titles">
-                    	</ul>
+                        <h2 class="section-title" id="art-title">All posts</h2>
+                        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <ul class="list titles">
+                        </ul>
                     </div>
                 </aside>
                 <section class="posts">
-                	<p id='maxHeightDiv'></p>
-                    <article class="post active" id="article-1" data-tags="cat cactus scissors" data-author ="Marion Berry">
+                    <p id='maxHeightDiv'></p>
+                    <article class="post active" id="article-1" data-tags="cat cactus scissors" data-author="Marion Berry">
                         <h3 class="post-title">Article 1</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -45,7 +44,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="post" id="article-2" data-tags="cat dog cow" data-author ="Theo Tabby">
+                    <article class="post" id="article-2" data-tags="cat dog cow" data-author="Theo Tabby">
                         <h3 class="post-title">Article 2</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -59,7 +58,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="post" id="article-3" data-tags="cat cow spider" data-author ="George Tuxedo">
+                    <article class="post" id="article-3" data-tags="cat cow spider" data-author="George Tuxedo">
                         <h3 class="post-title">Article 3</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -73,7 +72,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="post" id="article-4" data-tags="cat cactus spider" data-author ="Kitty Toebean">
+                    <article class="post" id="article-4" data-tags="cat cactus spider" data-author="Kitty Toebean">
                         <h3 class="post-title">Article 4</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -87,7 +86,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="post" id="article-5" data-tags="cat cactus dog spider" data-author ="Marion Berry">
+                    <article class="post" id="article-5" data-tags="cat cactus dog spider" data-author="Marion Berry">
                         <h3 class="post-title">Article 5</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -101,7 +100,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="post" id="article-6"data-tags="cat scissors dog spider" data-author ="George Tuxedo">
+                    <article class="post" id="article-6" data-tags="cat scissors dog spider" data-author="George Tuxedo">
                         <h3 class="post-title">Article 6</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -115,7 +114,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="post" id="article-7" data-tags="cat cactus cow dog" data-author ="Kitty Toebean">
+                    <article class="post" id="article-7" data-tags="cat cactus cow dog" data-author="Kitty Toebean">
                         <h3 class="post-title">Article 7</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -129,7 +128,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="post" id="article-8" data-tags="cat cactus spider" data-author ="Theo Tabby">
+                    <article class="post" id="article-8" data-tags="cat cactus spider" data-author="Theo Tabby">
                         <h3 class="post-title">Article 8</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -143,7 +142,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="post" id="article-9" data-tags="dog scissors spider" data-author ="Marion Berry">
+                    <article class="post" id="article-9" data-tags="dog scissors spider" data-author="Marion Berry">
                         <h3 class="post-title">Article 9</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -157,7 +156,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="post" id="article-10" data-tags="mouse snail cactus spider" data-author ="George Tuxedo">
+                    <article class="post" id="article-10" data-tags="mouse snail cactus spider" data-author="George Tuxedo">
                         <h3 class="post-title">Article 10</h3>
                         <p class="post-author"></p>
                         <div class="post-content">
@@ -184,21 +183,21 @@
         </div>
     </div>
     <script id="template-article-link" type="text/x-handlebars-template">
-  	<li><a href="#{{ id }}"><span>{{ title }}</span></a></li>
+        <li><a href="#{{ id }}"><span>{{ title }}</span></a></li>
 	</script>
-	<script id="template-tag-link" type="text/x-handlebars-template">
-  	<li><a href="#{{ id }}">{{ title }}</a></li>
+    <script id="template-tag-link" type="text/x-handlebars-template">
+        <li><a href="#{{ id }}">{{ title }}</a></li>
 	</script>
-	<script id="template-author-link" type="text/x-handlebars-template">
-  	<li><a href="#{{ id }}">{{ title }}</a></li>
+    <script id="template-author-link" type="text/x-handlebars-template">
+        <li><a href="#{{ id }}">{{ title }}</a></li>
 	</script>
-	<script id="template-tag-cloud-link" type="text/x-handlebars-template">
-  		{{#each tags}}
+    <script id="template-tag-cloud-link" type="text/x-handlebars-template">
+        {{#each tags}}
  		<li><a href="#{{ id }}" class={{className}}>{{ tag }}</a></li>
   		{{/each}}
 	</script>
-	<script id="template-author-cloud-link" type="text/x-handlebars-template">
-  		{{#each authors}}
+    <script id="template-author-cloud-link" type="text/x-handlebars-template">
+        {{#each authors}}
  		<li><a href="#{{ id }}">{{author}}({{count}})</a></li>
   		{{/each}}
 	</script>

@@ -184,6 +184,7 @@ li a:hover,
 
 .post-author {
   font-style: italic;
+  list-style-type: none;
 }
 
 .post-tags {

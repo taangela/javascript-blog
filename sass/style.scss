@@ -88,6 +88,7 @@ li a,
     background-color: #EEEDF5;
 }
 
+
 /* Logo */
 
 .logo-section {
@@ -140,31 +141,36 @@ li a,
 }
 
 .sidebar .tags li {
-  display: inline;
+    display: inline;
 }
+
 .sidebar .tags a {
-  padding: 10px;
+    padding: 10px;
 }
 
 .tag-size-1 {
-  font-size: 80%;
-  opacity: 0.5;
+    font-size: 80%;
+    opacity: 0.5;
 }
+
 .tag-size-2 {
-  font-size: 90%;
-  opacity: 0.6;
+    font-size: 90%;
+    opacity: 0.6;
 }
+
 .tag-size-3 {
-  font-size: 110%;
-  opacity: 0.7;
+    font-size: 110%;
+    opacity: 0.7;
 }
+
 .tag-size-4 {
-  font-size: 130%;
-  opacity: 0.8;
+    font-size: 130%;
+    opacity: 0.8;
 }
+
 .tag-size-5 {
-  font-size: 150%;
-  opacity: 1;
+    font-size: 150%;
+    opacity: 1;
 }
 
 /* Authors */
@@ -198,7 +204,10 @@ li a,
 
 .post-author {
     font-style: italic;
+    list-style-type: none;
 }
+
+.post-author li {}
 
 
 .post-tags {
